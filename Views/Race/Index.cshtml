@@ -1,0 +1,13 @@
+@model List<RunGroopWebApp.Models.Race> 
+@{
+    ViewData["Title"] = "Race Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Race Page</h1>
+    <ul>
+    @foreach (var x in Model) {
+        <li>@x.Title</li>
+    }
+    </ul>
+</div>
